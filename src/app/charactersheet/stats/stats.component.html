@@ -1,0 +1,52 @@
+<div class="flex-container">
+    <div class="flex-stretch">
+        <div *ngFor="let stat of characterStats" class="ed-card w3-card">
+            <div *ngIf="editMode">
+                <i *ngIf="editMode" (click)="increaseStat(talent)" class="glyphicon glyphicon-menu-up"></i>
+                <div *ngIf="editMode">{{ stat.base }}</div>
+                <i *ngIf="editMode" (click)="decreaseStat(talent)" class="glyphicon glyphicon-menu-down"></i>
+            </div>
+            <div data-toggle="modal" data-target="#ed-stats-modal">{{ stat.name }}</div>
+            <div>
+                <b>{{ getStep(stat.base) }}</b>
+            </div>
+        </div>
+    </div>
+    <div class="flex-stretch">
+        <div *ngFor="let stat of characterDefenses" class="ed-card w3-card" data-toggle="modal" data-target="#ed-stats-modal">
+            <div>{{ stat.name }}</div>
+            <div>
+                <b>{{ getStep(stat.base) }}</b>
+            </div>
+        </div>
+    </div>
+    <div class="flex-stretch">
+        <div *ngFor="let stat of characterOther" class="ed-card w3-card" data-toggle="modal" data-target="#ed-stats-modal">
+            <div>{{ stat.base }}</div>
+            <div>{{ stat.name }}</div>
+            <div>
+                <b>{{ getStep(stat.base) }}</b>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="ed-stats-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

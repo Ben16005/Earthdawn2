@@ -1,0 +1,45 @@
+.ed-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.ed-body {
+  flex: 1;
+}
+
+.ed-content {
+  flex: 1;
+}
+
+.ed-nav,
+.ed-ads {
+  /* 12em is the width of the columns */
+  background: lightcyan;
+}
+
+.ed-nav {
+  /* put the nav on the left */
+  background: lightblue;
+}
+
+.ed-header {
+  background-color: cornflowerblue;
+}
+
+.ed-content {
+  background: lightgray;
+}
+
+.ed-button {
+  border: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px;
+  margin-right: 20px;
+}

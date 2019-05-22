@@ -1,0 +1,45 @@
+<div class="flex-container">
+    <div class="flex-stretch ed-talent-container" *ngFor="let discipline of disciplines">
+        <div id="ed-discipline" class="ed-talent">{{ discipline.name }}</div>
+        <table class="ed-talent">
+            <tr>
+                <th>Name</th>
+                <th class="table-center">Rank</th>
+                <th class="table-center">Attribute</th>
+                <th class="table-center">Step</th>
+            </tr>
+            <ng-container *ngFor="let talent of discipline.talents">
+                <tr>
+                    <td data-toggle="modal" data-target="#ed-talent-modal" id="talent-name">{{ talent.name }} ({{ getKarma(talent) }})</td>
+                    <td class="table-center" style="flex: 1">
+                        <i *ngIf="editMode" (click)="increaseTalent(talent)" class="glyphicon glyphicon-menu-up"></i>
+                        <div>{{ talent.rankSave }}</div>
+                        <i *ngIf="editMode" (click)="decreaseTalent(talent)" class="glyphicon glyphicon-menu-down"></i>
+                    </td>
+                    <td class="table-center">{{ talent.attribute }}</td>
+                    <td class="table-center">{{ talent.step }}</td>
+                </tr>
+            </ng-container>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="ed-talent-modal" class="modal fade ed-modal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
