@@ -2589,7 +2589,8 @@ export const karmaRitual: ShortTalent = {
     reqKarma: false,
     action: false,
     strain: 0,
-    rankMod: false
+    rankMod: false,
+    description: 'Allows a character to generate Karma every morning based upon their race.'
 };
 
 export const karmicInfusion: ShortTalent = {

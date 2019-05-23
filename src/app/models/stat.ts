@@ -4,6 +4,7 @@ export class Stat {
   circleMod: number;
   baseMod: number;
   stepMod: number;
+  description? = "";
 
   constructor(name: string, base: number) {
     this.name = name;

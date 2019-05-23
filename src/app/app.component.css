@@ -29,17 +29,10 @@
 }
 
 .ed-header {
+  justify-content: space-between;
   background-color: cornflowerblue;
 }
 
 .ed-content {
   background: lightgray;
-}
-
-.ed-button {
-  border: 0;
-  background: none;
-  box-shadow: none;
-  border-radius: 0px;
-  margin-right: 20px;
 }

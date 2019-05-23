@@ -1,22 +1,24 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { archer } from '../../shared/disciplines/archer';
-import { airSailor } from '../../shared/disciplines/airsailor';
-import { Discipline } from '../../models/discipline';
-import { Talent } from '../../models/talent';
-import { illusionist } from '../../shared/disciplines/illusionist';
-import { EditModeService } from '../../services/editmode.service';
+import { Component, OnInit, Input, Inject } from "@angular/core";
+import { archer } from "../../shared/disciplines/archer";
+import { airSailor } from "../../shared/disciplines/airsailor";
+import { Discipline } from "../../models/discipline";
+import { Talent } from "../../models/talent";
+import { illusionist } from "../../shared/disciplines/illusionist";
+import { EditModeService } from "../../services/editmode.service";
+import { CharacterModalDialog } from "../../shared/dialogs/modal/modaldialog.component";
+import { NgbModal } from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
-  selector: 'pm-talents',
-  templateUrl: './talents.component.html',
-  styleUrls: ['./talents.component.css']
+  selector: "pm-talents",
+  templateUrl: "./talents.component.html",
+  styleUrls: ["./talents.component.css"]
 })
 export class TalentsComponent implements OnInit {
   @Input() selectedCharacter;
 
   disciplines: Discipline[] = [illusionist, archer, airSailor];
 
-  constructor(private editService: EditModeService) {}
+  constructor(private editService: EditModeService, public dialog: NgbModal) {}
 
   editMode: boolean;
   ranks: number;
@@ -58,16 +60,21 @@ export class TalentsComponent implements OnInit {
     if (rankTalent === 0) {
       rankTalent = 1;
     }
-    return  rankTalent + rankCircle;
+    return rankTalent + rankCircle;
   }
 
   getKarma(talent: Talent) {
     if (talent.discipline) {
-      return 'D';
+      return "D";
     } else if (talent.karma) {
-      return 'K';
+      return "K";
     } else {
-      return 'N';
+      return "N";
     }
+  }
+
+  openDialog(currentTalent: Talent) {
+    const modalRef = this.dialog.open(CharacterModalDialog);
+    modalRef.componentInstance.data = currentTalent;
   }
 }

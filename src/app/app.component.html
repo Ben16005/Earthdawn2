@@ -3,7 +3,8 @@
     <button class="ed-button" mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <h1>Earthdawn Web App</h1>
+    <h1>{{ selectedCharacter.name }}</h1>
+    <div>Change Character</div>
   </mat-toolbar>
   <mat-sidenav-container flex="1">
     <mat-sidenav-content>
@@ -11,16 +12,6 @@
     </mat-sidenav-content>
     <mat-sidenav #snav mode="push" class="ed-nav">
       <pm-aside-left></pm-aside-left>
-      <div>
-        Edit Mode:
-        <!-- <input type="checkbox" [checked]="editMode" (change)="editMode = !editMode" (ngModelChange)="update($event)"/>
-        <div>{{ editMode }}</div> -->
-        <input type="checkbox" [(ngModel)]="editMode" (ngModelChange)="update($event)">
-      </div>
     </mat-sidenav>
   </mat-sidenav-container>
-  <footer>
-    <div>Current Value: {{ editModeGlobal }}</div>
-    <button (click)="increaseValue()">Increase Value</button>
-  </footer>
 </div>

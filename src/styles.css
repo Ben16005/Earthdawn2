@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+li {
+    font-size: large;
+  }
+  
+  div.panel-heading {
+    font-size: x-large;
+  }
+  
+  .nav-tabs {
+    background: white;
+  }
+  
+  .ed-card {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background: white;
+    margin: 10px 10px 10px 10px;
+    line-height: 2;
+    text-align: left;
+    padding: 2rem;
+  }
+  
+  .flex-stretch {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .panel-primary {
+    height: 100%;
+  }
+  
+  .glyphicon {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+  }
+  
+  .glyphicon:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+
+  .ed-button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+  

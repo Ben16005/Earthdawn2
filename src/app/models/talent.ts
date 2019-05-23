@@ -5,6 +5,9 @@ export class ShortTalent {
     action: boolean;
     strain: number;
     rankMod: boolean;
+
+    // Optional parameter
+    description? = "";
 }
 
 export class Talent {
@@ -12,7 +15,8 @@ export class Talent {
     circle: number;
     attribute: string;
     strain: number;
-
+    description? = "";
+    
     rank? = 0;
     rankSave? = 0;
     rankMod?: number;
@@ -27,6 +31,7 @@ export class Talent {
         this.karma = briefTalent.reqKarma;
         this.action = briefTalent.action;
         this.strain = briefTalent.strain;
+        this.description = briefTalent.description;
         this.circle = circle;
         this.discipline = discipline;
     }

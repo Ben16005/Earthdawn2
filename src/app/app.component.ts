@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CharacterService } from './services/character.service';
 import { Character } from './models/character';
-import { EditModeService } from './services/editmode.service';
 
 @Component({
   selector: 'pm-root',
@@ -11,13 +10,11 @@ import { EditModeService } from './services/editmode.service';
 export class AppComponent implements OnInit {
   title = 'Earthdawn Character Sheet';
   currentValue: number;
-  editMode = false;
 
   public selectedCharacter = new Character('Suroshi');
 
   constructor(
     private characterService: CharacterService,
-    private editService: EditModeService
   ) {}
 
   ngOnInit() {
@@ -28,10 +25,6 @@ export class AppComponent implements OnInit {
   increaseValue() {
     this.characterService.setCurrentCharacter(this.currentValue + 1);
     this.currentValue = this.characterService.getCurrentCharacter();
-  }
-
-  update(value: boolean) {
-    this.editService.changeEditMode(value);
   }
 
   loadCharacterInformation() {

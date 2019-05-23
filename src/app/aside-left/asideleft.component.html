@@ -2,4 +2,18 @@
   <a mat-list-item routerLink="/welcome">Welcome</a>
   <a mat-list-item routerLink="/charactersheet">Character Sheet</a>
   <a mat-list-item routerLink="/printsheet">Print Sheet</a>
+
+  <div class="btn-group-toggle" width="100%">
+    <label class="btn-primary" ngbButtonLabel width="100%">
+      Edit Mode
+      <div *ngIf="editMode === false">Off</div>
+      <div *ngIf="editMode === true">On</div>
+      <input
+        type="checkbox"
+        ngbButton
+        [(ngModel)]="editMode"
+        (ngModelChange)="toggleEditMode($event)"
+      />
+    </label>
+  </div>
 </mat-nav-list>

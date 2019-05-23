@@ -21,5 +21,6 @@ export const karmaRitual: Talent = {
     rankSave: 0,
     discipline: false,
     karma: false,
-    action: false
+    action: false,
+    description: 'Allows a character to generate Karma every morning based upon their race.'
 };
