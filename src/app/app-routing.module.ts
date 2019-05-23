@@ -5,12 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './home/welcome.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
 import { PrintSheetComponent } from './printsheet/printsheet.component';
+import { AuthGuard } from './shared/auth/authguard.service';
+import { UserResolver } from './shared/auth/userresolver.service';
 
 const routes: Routes = [
-  { path: 'charactersheet', component: CharacterSheetComponent },
-  { path: 'printsheet', component: PrintSheetComponent },
-  { path: 'welcome', component: WelcomeComponent },
+  // { path: 'printsheet', component: PrintSheetComponent },
+  { path: 'welcome', component: WelcomeComponent, canActivate: [AuthGuard] },
   { path: '', redirectTo: 'welcome', pathMatch: 'full' },
+  { path: 'charactersheet', component: CharacterSheetComponent, resolve: { data: UserResolver} },
 ];
 
 @NgModule({

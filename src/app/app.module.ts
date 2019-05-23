@@ -28,6 +28,26 @@ import { PrintSheetComponent } from "./printsheet/printsheet.component";
 import { CharacterService } from "./services/character.service";
 import { EditModeService } from "./services/editmode.service";
 
+// Auth Modules
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { UserService } from './shared/auth/user.service';
+import { AuthGuard } from './shared/auth/authguard.service';
+import { UserResolver } from './shared/auth/userresolver.service';
+import { AuthService } from './shared/auth/auth.service';
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyC2ZH54DKl7g1aglSTX3-0gpimzQNtulgY",
+  authDomain: "earthdawn-charactersheet.firebaseapp.com",
+  databaseURL: "https://earthdawn-charactersheet.firebaseio.com",
+  projectId: "earthdawn-charactersheet",
+  storageBucket: "earthdawn-charactersheet.appspot.com",
+  messagingSenderId: "345125635149",
+  appId: "1:345125635149:web:ecac0d7e2f374b76"
+};
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,15 +65,20 @@ import { EditModeService } from "./services/editmode.service";
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    // Bootstrap Modules
     NgbModule,
     MatSidenavModule,
     BrowserAnimationsModule,
     MatListModule,
     MatToolbarModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    // Auth Modules
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
-  providers: [CharacterService, EditModeService],
+  providers: [CharacterService, EditModeService, UserService, AuthGuard, UserResolver, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
