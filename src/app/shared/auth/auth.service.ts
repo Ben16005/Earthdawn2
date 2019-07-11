@@ -1,12 +1,14 @@
 import { Injectable } from "@angular/core";
 import { AngularFireAuth } from "@angular/fire/auth";
 import * as firebase from "firebase/app";
+import { FirebaseApp } from '@angular/fire';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class AuthService {
-  constructor(public afAuth: AngularFireAuth) {}
+  constructor(public afAuth: AngularFireAuth, private router: Router) {}
 
-  doGoogleLogin(){
+  doGoogleLogin() {
     return new Promise<any>((resolve, reject) => {
       let provider = new firebase.auth.GoogleAuthProvider();
       provider.addScope('profile');
@@ -14,11 +16,17 @@ export class AuthService {
       this.afAuth.auth
       .signInWithPopup(provider)
       .then(res => {
+        this.router.navigate(["/charactersheet"]);
         resolve(res);
       }, err => {
         console.log(err);
         reject(err);
       })
     })
+  }
+
+  doGoogleLogOut() {
+    this.afAuth.auth.signOut();
+    this.router.navigate(["/welcome"]);
   }
 }

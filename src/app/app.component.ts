@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { CharacterService } from "./services/character.service";
 import { Character } from "./models/character";
 import { UserService } from './shared/auth/user.service';
+import { AuthService } from './shared/auth/auth.service';
 
 @Component({
   selector: "pm-root",
@@ -15,7 +16,7 @@ export class AppComponent implements OnInit {
 
   public selectedCharacter = new Character("Suroshi");
 
-  constructor(private characterService: CharacterService, private user: UserService) {}
+  constructor(private characterService: CharacterService, private user: UserService, private googleAuthentication: AuthService) {}
 
   ngOnInit() {
     this.loadCharacterInformation();
@@ -34,5 +35,9 @@ export class AppComponent implements OnInit {
     this.selectedCharacter.height = "6'1\"";
     this.selectedCharacter.weight = 170;
     this.selectedCharacter.player = "Ben";
+  }  
+
+  logout() {
+    this.googleAuthentication.doGoogleLogOut();
   }
 }
