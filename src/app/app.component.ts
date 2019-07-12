@@ -3,6 +3,7 @@ import { CharacterService } from "./services/character.service";
 import { Character } from "./models/character";
 import { UserService } from './shared/auth/user.service';
 import { AuthService } from './shared/auth/auth.service';
+import { User } from 'firebase';
 
 @Component({
   selector: "pm-root",
@@ -12,7 +13,7 @@ import { AuthService } from './shared/auth/auth.service';
 export class AppComponent implements OnInit {
   title = "Earthdawn Character Sheet";
   currentValue: number;
-  currentUser: any;
+  currentUser: User;
 
   public selectedCharacter = new Character("Suroshi");
 
@@ -21,7 +22,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.loadCharacterInformation();
     this.currentValue = this.characterService.getCurrentCharacter();
-    this.currentUser = this.user.getCurrentUser();
+    this.user.getCurrentUser().then((user) => {
+      this.currentUser = user;
+    });
   }
 
   increaseValue() {

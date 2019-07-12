@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { AngularFireAuth } from "@angular/fire/auth";
 import * as firebase from "firebase/app";
-import { FirebaseApp } from '@angular/fire';
 import { Router } from '@angular/router';
 
 @Injectable()
@@ -16,7 +15,6 @@ export class AuthService {
       this.afAuth.auth
       .signInWithPopup(provider)
       .then(res => {
-        this.router.navigate(["/charactersheet"]);
         resolve(res);
       }, err => {
         console.log(err);
