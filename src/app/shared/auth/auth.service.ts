@@ -15,6 +15,8 @@ export class AuthService {
       this.afAuth.auth
       .signInWithPopup(provider)
       .then(res => {
+        this.router.navigate(['/charactersheet']);
+        location.reload();
         resolve(res);
       }, err => {
         console.log(err);

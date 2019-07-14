@@ -17,14 +17,18 @@ export class AppComponent implements OnInit {
 
   public selectedCharacter = new Character('Suroshi');
 
-  constructor(private characterService: CharacterService, private user: UserService, private googleAuthentication: AuthService) {}
+  constructor(private characterService: CharacterService, private userService: UserService, private googleAuthentication: AuthService) {}
 
   ngOnInit() {
     this.loadCharacterInformation();
     this.currentValue = this.characterService.getCurrentCharacter();
-    this.user.getCurrentUser().then((user) => {
-      this.currentUser = user;
-    });
+    this.userService.currentUser.subscribe(
+      (futureUser) => {
+        if (futureUser !== null) {
+          this.currentUser = futureUser;
+        }
+      }
+    );
   }
 
   increaseValue() {
@@ -42,5 +46,6 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.googleAuthentication.doGoogleLogOut();
+    this.currentUser = null;
   }
 }
