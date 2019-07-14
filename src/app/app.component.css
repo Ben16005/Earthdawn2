@@ -13,10 +13,6 @@
   flex: 1;
 }
 
-.ed-content {
-  flex: 1;
-}
-
 .ed-nav,
 .ed-ads {
   /* 12em is the width of the columns */
@@ -35,4 +31,5 @@
 
 .ed-content {
   background: lightgray;
+  text-align: center;
 }

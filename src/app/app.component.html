@@ -1,17 +1,16 @@
 <div class="ed-content">
-  <mat-toolbar class="ed-header" color="primary">
-    <button *ngIf="currentUser" class="ed-button" mat-icon-button (click)="snav.toggle()">
+  <mat-toolbar *ngIf="currentUser" class="ed-header" color="primary">
+    <button class="ed-button" mat-icon-button (click)="snav.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
     <h1>{{ selectedCharacter.name }}</h1>
-    <button *ngIf="currentUser" class="btn-primary" (click)="logout()">Logout</button>
-    <!-- <div *ngIf="!currentUser"></div> -->
+    <button class="btn-primary" (click)="logout()">Logout</button>    
   </mat-toolbar>
   <mat-sidenav-container flex="1">
     <mat-sidenav-content>
       <router-outlet></router-outlet>
     </mat-sidenav-content>
-    <mat-sidenav #snav mode="push" class="ed-nav">
+    <mat-sidenav #snav mode="push" class="ed-nav" *ngIf="currentUser">
       <app-aside-left></app-aside-left>
     </mat-sidenav>
   </mat-sidenav-container>
