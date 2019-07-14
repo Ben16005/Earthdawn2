@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { EditModeService } from '../services/editmode.service';
 
 @Component({
-  selector: 'pm-aside-left',
+  selector: 'app-aside-left',
   templateUrl: './asideleft.component.html',
   styleUrls: ['./asideleft.component.css']
 })

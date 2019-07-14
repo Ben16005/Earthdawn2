@@ -1,6 +1,6 @@
-import { Injectable } from "@angular/core";
-import { AngularFireAuth } from "@angular/fire/auth";
-import * as firebase from "firebase/app";
+import { Injectable } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import * as firebase from 'firebase/app';
 import { Router } from '@angular/router';
 
 @Injectable()
@@ -9,7 +9,7 @@ export class AuthService {
 
   doGoogleLogin() {
     return new Promise<any>((resolve, reject) => {
-      let provider = new firebase.auth.GoogleAuthProvider();
+      const provider = new firebase.auth.GoogleAuthProvider();
       provider.addScope('profile');
       provider.addScope('email');
       this.afAuth.auth
@@ -19,12 +19,12 @@ export class AuthService {
       }, err => {
         console.log(err);
         reject(err);
-      })
-    })
+      });
+    });
   }
 
   doGoogleLogOut() {
     this.afAuth.auth.signOut();
-    this.router.navigate(["/welcome"]);
+    this.router.navigate(['/welcome']);
   }
 }

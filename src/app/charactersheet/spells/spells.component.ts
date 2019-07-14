@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { Spells } from '../../models/spells';
-import { CharacterModalDialog } from 'src/app/shared/dialogs/modal/modaldialog.component';
+import { CharacterModalDialogComponent } from 'src/app/shared/dialogs/modal/modaldialog.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-    selector: 'pm-spells',
+    selector: 'app-spells',
     templateUrl: './spells.component.html',
     styleUrls: ['./spells.component.css']
   })
@@ -18,7 +18,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
     ];
 
     openDialog(currentSpell: Spells) {
-      const modalRef = this.dialog.open(CharacterModalDialog);
+      const modalRef = this.dialog.open(CharacterModalDialogComponent);
       modalRef.componentInstance.data = currentSpell;
     }
   }

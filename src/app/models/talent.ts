@@ -7,7 +7,7 @@ export class ShortTalent {
     rankMod: boolean;
 
     // Optional parameter
-    description? = "";
+    description ? = '';
 }
 
 export class Talent {
@@ -15,10 +15,10 @@ export class Talent {
     circle: number;
     attribute: string;
     strain: number;
-    description? = "";
-    
-    rank? = 0;
-    rankSave? = 0;
+    description ? = '';
+
+    rank ? = 0;
+    rankSave ? = 0;
     rankMod?: number;
     stepMod?: number;
     discipline: boolean;

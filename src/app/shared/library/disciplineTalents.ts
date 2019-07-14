@@ -198,7 +198,7 @@ export const architect: ShortTalent = {
     rankMod: false
 };
 
-export const areaLore_Bartertown: ShortTalent = {
+export const areaLoreBartertown: ShortTalent = {
     name: 'Area Lore: Bartertown',
     attribute: 'PER',
     reqKarma: false,
@@ -207,7 +207,7 @@ export const areaLore_Bartertown: ShortTalent = {
     rankMod: false
 };
 
-export const areaLore_Iopos: ShortTalent = {
+export const areaLoreIopos: ShortTalent = {
     name: 'Area Lore: Iopos',
     attribute: 'PER',
     reqKarma: false,
@@ -216,7 +216,7 @@ export const areaLore_Iopos: ShortTalent = {
     rankMod: false
 };
 
-export const areaLore_Parlainth: ShortTalent = {
+export const areaLoreParlainth: ShortTalent = {
     name: 'Area Lore: Parlainth',
     attribute: 'PER',
     reqKarma: false,
@@ -225,7 +225,7 @@ export const areaLore_Parlainth: ShortTalent = {
     rankMod: false
 };
 
-export const areaLore_TwilightPeaks: ShortTalent = {
+export const areaLoreTwilightPeaks: ShortTalent = {
     name: 'Area Lore: Twilight Peaks',
     attribute: 'PER',
     reqKarma: false,
@@ -234,7 +234,7 @@ export const areaLore_TwilightPeaks: ShortTalent = {
     rankMod: false
 };
 
-export const areaLore_Vivane_SkyPoint: ShortTalent = {
+export const areaLoreVivaneSkyPoint: ShortTalent = {
     name: 'Area Lore: Vivane / Sky Point',
     attribute: 'PER',
     reqKarma: false,
@@ -297,7 +297,7 @@ export const armoredFetish: ShortTalent = {
     rankMod: false
 };
 
-export const armoredMatrix_Light: ShortTalent = {
+export const armoredMatrixLight: ShortTalent = {
     name: 'Armored Matrix - Light',
     attribute: '',
     reqKarma: false,
@@ -306,7 +306,7 @@ export const armoredMatrix_Light: ShortTalent = {
     rankMod: false
 };
 
-export const armoredMatrix_Elementalist: ShortTalent = {
+export const armoredMatrixElementalist: ShortTalent = {
     name: 'Armored Matrix-Elementalist',
     attribute: '',
     reqKarma: false,
@@ -315,7 +315,7 @@ export const armoredMatrix_Elementalist: ShortTalent = {
     rankMod: false
 };
 
-export const armoredMatrix_Illusionist: ShortTalent = {
+export const armoredMatrixIllusionist: ShortTalent = {
     name: 'Armored Matrix-Illusionist',
     attribute: '',
     reqKarma: false,
@@ -324,7 +324,7 @@ export const armoredMatrix_Illusionist: ShortTalent = {
     rankMod: false
 };
 
-export const armoredMatrix_Nethermancy: ShortTalent = {
+export const armoredMatrixNethermancy: ShortTalent = {
     name: 'Armored Matrix-Nethermancy',
     attribute: '',
     reqKarma: false,
@@ -333,7 +333,7 @@ export const armoredMatrix_Nethermancy: ShortTalent = {
     rankMod: false
 };
 
-export const armoredMatrix_Wizardry: ShortTalent = {
+export const armoredMatrixWizardry: ShortTalent = {
     name: 'Armored Matrix-Wizardry',
     attribute: '',
     reqKarma: false,
@@ -351,7 +351,7 @@ export const arrowCatcher: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Cello: ShortTalent = {
+export const artisanCello: ShortTalent = {
     name: 'Artisan: Cello',
     attribute: 'CHA',
     reqKarma: false,
@@ -360,7 +360,7 @@ export const artisan_Cello: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Dancing: ShortTalent = {
+export const artisanDancing: ShortTalent = {
     name: 'Artisan: Dancing',
     attribute: 'CHA',
     reqKarma: false,
@@ -369,7 +369,7 @@ export const artisan_Dancing: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Drawing: ShortTalent = {
+export const artisanDrawing: ShortTalent = {
     name: 'Artisan: Drawing',
     attribute: 'CHA',
     reqKarma: false,
@@ -378,7 +378,7 @@ export const artisan_Drawing: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Embroidery: ShortTalent = {
+export const artisanEmbroidery: ShortTalent = {
     name: 'Artisan: Embroidery',
     attribute: 'CHA',
     reqKarma: false,
@@ -387,7 +387,7 @@ export const artisan_Embroidery: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Hair_styling: ShortTalent = {
+export const artisanHairStyling: ShortTalent = {
     name: 'Artisan: Hair-styling',
     attribute: 'CHA',
     reqKarma: false,
@@ -396,7 +396,7 @@ export const artisan_Hair_styling: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Harp: ShortTalent = {
+export const artisanHarp: ShortTalent = {
     name: 'Artisan: Harp',
     attribute: 'CHA',
     reqKarma: false,
@@ -405,7 +405,7 @@ export const artisan_Harp: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Lute: ShortTalent = {
+export const artisanLute: ShortTalent = {
     name: 'Artisan: Lute',
     attribute: 'CHA',
     reqKarma: false,
@@ -414,7 +414,7 @@ export const artisan_Lute: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Lyre: ShortTalent = {
+export const artisanLyre: ShortTalent = {
     name: 'Artisan: Lyre',
     attribute: 'CHA',
     reqKarma: false,
@@ -423,7 +423,7 @@ export const artisan_Lyre: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Makeup: ShortTalent = {
+export const artisanMakeup: ShortTalent = {
     name: 'Artisan: Makeup',
     attribute: 'CHA',
     reqKarma: false,
@@ -432,7 +432,7 @@ export const artisan_Makeup: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Origami: ShortTalent = {
+export const artisanOrigami: ShortTalent = {
     name: 'Artisan: Origami',
     attribute: 'CHA',
     reqKarma: false,
@@ -441,7 +441,7 @@ export const artisan_Origami: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Painting: ShortTalent = {
+export const artisanPainting: ShortTalent = {
     name: 'Artisan: Painting',
     attribute: 'CHA',
     reqKarma: false,
@@ -450,7 +450,7 @@ export const artisan_Painting: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Scultping: ShortTalent = {
+export const artisanScultping: ShortTalent = {
     name: 'Artisan: Scultping',
     attribute: 'CHA',
     reqKarma: false,
@@ -459,7 +459,7 @@ export const artisan_Scultping: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Singing: ShortTalent = {
+export const artisanSinging: ShortTalent = {
     name: 'Artisan: Singing',
     attribute: 'CHA',
     reqKarma: false,
@@ -468,7 +468,7 @@ export const artisan_Singing: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Sketching: ShortTalent = {
+export const artisanSketching: ShortTalent = {
     name: 'Artisan: Sketching',
     attribute: 'CHA',
     reqKarma: false,
@@ -477,7 +477,7 @@ export const artisan_Sketching: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Tatooing: ShortTalent = {
+export const artisanTatooing: ShortTalent = {
     name: 'Artisan: Tatooing',
     attribute: 'CHA',
     reqKarma: false,
@@ -486,7 +486,7 @@ export const artisan_Tatooing: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_WeaponEtching: ShortTalent = {
+export const artisanWeaponEtching: ShortTalent = {
     name: 'Artisan: Weapon Etching',
     attribute: 'CHA',
     reqKarma: false,
@@ -495,7 +495,7 @@ export const artisan_WeaponEtching: ShortTalent = {
     rankMod: false
 };
 
-export const artisan_Writing: ShortTalent = {
+export const artisanWriting: ShortTalent = {
     name: 'Artisan: Writing',
     attribute: 'CHA',
     reqKarma: false,
@@ -846,7 +846,7 @@ export const botany: ShortTalent = {
     rankMod: false
 };
 
-export const bowyer_Fletcher: ShortTalent = {
+export const bowyerFletcher: ShortTalent = {
     name: 'Bowyer / Fletcher',
     attribute: 'PER',
     reqKarma: false,
@@ -1350,7 +1350,7 @@ export const diveAttack: ShortTalent = {
     rankMod: true
 };
 
-export const dK_AirSailor: ShortTalent = {
+export const dKAirSailor: ShortTalent = {
     name: 'DK: Air Sailor',
     attribute: 'PER',
     reqKarma: false,
@@ -1359,7 +1359,7 @@ export const dK_AirSailor: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Archer: ShortTalent = {
+export const dKArcher: ShortTalent = {
     name: 'DK: Archer',
     attribute: 'PER',
     reqKarma: false,
@@ -1368,7 +1368,7 @@ export const dK_Archer: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Beastmanster: ShortTalent = {
+export const dKBeastmanster: ShortTalent = {
     name: 'DK: Beastmanster',
     attribute: 'PER',
     reqKarma: false,
@@ -1377,7 +1377,7 @@ export const dK_Beastmanster: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Calvaryman: ShortTalent = {
+export const dKCalvaryman: ShortTalent = {
     name: 'DK: Calvaryman',
     attribute: 'PER',
     reqKarma: false,
@@ -1386,7 +1386,7 @@ export const dK_Calvaryman: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Elementalist: ShortTalent = {
+export const dKElementalist: ShortTalent = {
     name: 'DK: Elementalist',
     attribute: 'PER',
     reqKarma: false,
@@ -1395,7 +1395,7 @@ export const dK_Elementalist: ShortTalent = {
     rankMod: false
 };
 
-export const dK_EnlightenedWarrior: ShortTalent = {
+export const dKEnlightenedWarrior: ShortTalent = {
     name: 'DK: Enlightened Warrior',
     attribute: 'PER',
     reqKarma: false,
@@ -1404,7 +1404,7 @@ export const dK_EnlightenedWarrior: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Illusionist: ShortTalent = {
+export const dKIllusionist: ShortTalent = {
     name: 'DK: Illusionist',
     attribute: 'PER',
     reqKarma: false,
@@ -1413,7 +1413,7 @@ export const dK_Illusionist: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Journeyman: ShortTalent = {
+export const dKJourneyman: ShortTalent = {
     name: 'DK: Journeyman',
     attribute: 'PER',
     reqKarma: false,
@@ -1422,7 +1422,7 @@ export const dK_Journeyman: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Liberator: ShortTalent = {
+export const dKLiberator: ShortTalent = {
     name: 'DK: Liberator',
     attribute: 'PER',
     reqKarma: false,
@@ -1431,7 +1431,7 @@ export const dK_Liberator: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Nethermancer: ShortTalent = {
+export const dKNethermancer: ShortTalent = {
     name: 'DK: Nethermancer',
     attribute: 'PER',
     reqKarma: false,
@@ -1440,7 +1440,7 @@ export const dK_Nethermancer: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Purifier: ShortTalent = {
+export const dKPurifier: ShortTalent = {
     name: 'DK: Purifier',
     attribute: 'PER',
     reqKarma: false,
@@ -1449,7 +1449,7 @@ export const dK_Purifier: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Scout: ShortTalent = {
+export const dKScout: ShortTalent = {
     name: 'DK: Scout',
     attribute: 'PER',
     reqKarma: false,
@@ -1458,7 +1458,7 @@ export const dK_Scout: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Shaman: ShortTalent = {
+export const dKShaman: ShortTalent = {
     name: 'DK: Shaman',
     attribute: 'PER',
     reqKarma: false,
@@ -1467,7 +1467,7 @@ export const dK_Shaman: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Shinobi: ShortTalent = {
+export const dKShinobi: ShortTalent = {
     name: 'DK: Shinobi',
     attribute: 'PER',
     reqKarma: false,
@@ -1476,7 +1476,7 @@ export const dK_Shinobi: ShortTalent = {
     rankMod: false
 };
 
-export const dK_SkyRaider: ShortTalent = {
+export const dKSkyRaider: ShortTalent = {
     name: 'DK: Sky Raider',
     attribute: 'PER',
     reqKarma: false,
@@ -1485,7 +1485,7 @@ export const dK_SkyRaider: ShortTalent = {
     rankMod: false
 };
 
-export const dK_SwordSaint: ShortTalent = {
+export const dKSwordSaint: ShortTalent = {
     name: 'DK: Sword Saint',
     attribute: 'PER',
     reqKarma: false,
@@ -1494,7 +1494,7 @@ export const dK_SwordSaint: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Swordmaster: ShortTalent = {
+export const dKSwordmaster: ShortTalent = {
     name: 'DK: Swordmaster',
     attribute: 'PER',
     reqKarma: false,
@@ -1503,7 +1503,7 @@ export const dK_Swordmaster: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Thief: ShortTalent = {
+export const dKThief: ShortTalent = {
     name: 'DK: Thief',
     attribute: 'PER',
     reqKarma: false,
@@ -1512,7 +1512,7 @@ export const dK_Thief: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Troubadour: ShortTalent = {
+export const dKTroubadour: ShortTalent = {
     name: 'DK: Troubadour',
     attribute: 'PER',
     reqKarma: false,
@@ -1521,7 +1521,7 @@ export const dK_Troubadour: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Warrior: ShortTalent = {
+export const dKWarrior: ShortTalent = {
     name: 'DK: Warrior',
     attribute: 'PER',
     reqKarma: false,
@@ -1530,7 +1530,7 @@ export const dK_Warrior: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Weaponsmith: ShortTalent = {
+export const dKWeaponsmith: ShortTalent = {
     name: 'DK: Weaponsmith',
     attribute: 'PER',
     reqKarma: false,
@@ -1539,7 +1539,7 @@ export const dK_Weaponsmith: ShortTalent = {
     rankMod: false
 };
 
-export const dK_Wizard: ShortTalent = {
+export const dKWizard: ShortTalent = {
     name: 'DK: Wizard',
     attribute: 'PER',
     reqKarma: false,
@@ -1548,7 +1548,7 @@ export const dK_Wizard: ShortTalent = {
     rankMod: false
 };
 
-export const dK_WuJen: ShortTalent = {
+export const dKWuJen: ShortTalent = {
     name: 'DK: Wu-Jen',
     attribute: 'PER',
     reqKarma: false,
@@ -1863,7 +1863,7 @@ export const enhancedFetish: ShortTalent = {
     rankMod: false
 };
 
-export const enhancedMatrix_Light: ShortTalent = {
+export const enhancedMatrixLight: ShortTalent = {
     name: 'Enhanced Matrix - Light',
     attribute: '',
     reqKarma: false,
@@ -1872,7 +1872,7 @@ export const enhancedMatrix_Light: ShortTalent = {
     rankMod: false
 };
 
-export const enhancedMatrix_Elementalist: ShortTalent = {
+export const enhancedMatrixElementalist: ShortTalent = {
     name: 'Enhanced Matrix-Elementalist',
     attribute: '',
     reqKarma: false,
@@ -1881,7 +1881,7 @@ export const enhancedMatrix_Elementalist: ShortTalent = {
     rankMod: false
 };
 
-export const enhancedMatrix_Illusionist: ShortTalent = {
+export const enhancedMatrixIllusionist: ShortTalent = {
     name: 'Enhanced Matrix-Illusionist',
     attribute: '',
     reqKarma: false,
@@ -1890,7 +1890,7 @@ export const enhancedMatrix_Illusionist: ShortTalent = {
     rankMod: false
 };
 
-export const enhancedMatrix_Nethermancy: ShortTalent = {
+export const enhancedMatrixNethermancy: ShortTalent = {
     name: 'Enhanced Matrix-Nethermancy',
     attribute: '',
     reqKarma: false,
@@ -1899,7 +1899,7 @@ export const enhancedMatrix_Nethermancy: ShortTalent = {
     rankMod: false
 };
 
-export const enhancedMatrix_Wizardry: ShortTalent = {
+export const enhancedMatrixWizardry: ShortTalent = {
     name: 'Enhanced Matrix-Wizardry',
     attribute: '',
     reqKarma: false,
@@ -2602,7 +2602,7 @@ export const karmicInfusion: ShortTalent = {
     rankMod: false
 };
 
-export const kS_Military: ShortTalent = {
+export const kSMilitary: ShortTalent = {
     name: 'KS: Military',
     attribute: 'PER',
     reqKarma: false,
@@ -2611,7 +2611,7 @@ export const kS_Military: ShortTalent = {
     rankMod: false
 };
 
-export const kS_Performers: ShortTalent = {
+export const kSPerformers: ShortTalent = {
     name: 'KS: Performers',
     attribute: 'PER',
     reqKarma: false,
@@ -3124,7 +3124,7 @@ export const painting: ShortTalent = {
     rankMod: false
 };
 
-export const partyLore_GrayGriffin: ShortTalent = {
+export const partyLoreGrayGriffin: ShortTalent = {
     name: 'Party Lore: Gray Griffin',
     attribute: 'PER',
     reqKarma: false,
@@ -3133,7 +3133,7 @@ export const partyLore_GrayGriffin: ShortTalent = {
     rankMod: false
 };
 
-export const partyLore_OrderoftheDawn: ShortTalent = {
+export const partyLoreOrderoftheDawn: ShortTalent = {
     name: 'Party Lore: Order of the Dawn',
     attribute: 'PER',
     reqKarma: false,
@@ -3277,7 +3277,7 @@ export const quickShot: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Dwarf: ShortTalent = {
+export const racialLoreDwarf: ShortTalent = {
     name: 'Racial Lore: Dwarf',
     attribute: 'PER',
     reqKarma: false,
@@ -3286,7 +3286,7 @@ export const racialLore_Dwarf: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Elf: ShortTalent = {
+export const racialLoreElf: ShortTalent = {
     name: 'Racial Lore: Elf',
     attribute: 'PER',
     reqKarma: false,
@@ -3295,7 +3295,7 @@ export const racialLore_Elf: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Human: ShortTalent = {
+export const racialLoreHuman: ShortTalent = {
     name: 'Racial Lore: Human',
     attribute: 'PER',
     reqKarma: false,
@@ -3304,7 +3304,7 @@ export const racialLore_Human: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_bsidiman: ShortTalent = {
+export const racialLoreObsidiman: ShortTalent = {
     name: 'Racial Lore: Obsidiman',
     attribute: 'PER',
     reqKarma: false,
@@ -3313,7 +3313,7 @@ export const racialLore_bsidiman: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Ork: ShortTalent = {
+export const racialLoreOrk: ShortTalent = {
     name: 'Racial Lore: Ork',
     attribute: 'PER',
     reqKarma: false,
@@ -3322,7 +3322,7 @@ export const racialLore_Ork: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Troll: ShortTalent = {
+export const racialLoreTroll: ShortTalent = {
     name: 'Racial Lore: Troll',
     attribute: 'PER',
     reqKarma: false,
@@ -3331,7 +3331,7 @@ export const racialLore_Troll: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Tskrang: ShortTalent = {
+export const racialLoreTskrang: ShortTalent = {
     name: 'Racial Lore: T\'skrang',
     attribute: 'PER',
     reqKarma: false,
@@ -3340,7 +3340,7 @@ export const racialLore_Tskrang: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Valhalaru: ShortTalent = {
+export const racialLoreValhalaru: ShortTalent = {
     name: 'Racial Lore: Valhalaru',
     attribute: 'PER',
     reqKarma: false,
@@ -3349,7 +3349,7 @@ export const racialLore_Valhalaru: ShortTalent = {
     rankMod: false
 };
 
-export const racialLore_Windling: ShortTalent = {
+export const racialLoreWindling: ShortTalent = {
     name: 'Racial Lore: Windling',
     attribute: 'PER',
     reqKarma: false,
@@ -3367,7 +3367,7 @@ export const radiance: ShortTalent = {
     rankMod: false
 };
 
-export const radiantAura_Defense: ShortTalent = {
+export const radiantAuraDefense: ShortTalent = {
     name: 'Radiant Aura: Defense',
     attribute: 'WIL',
     reqKarma: false,
@@ -3376,7 +3376,7 @@ export const radiantAura_Defense: ShortTalent = {
     rankMod: false
 };
 
-export const radiantAura_Life: ShortTalent = {
+export const radiantAuraLife: ShortTalent = {
     name: 'Radiant Aura: Life',
     attribute: 'WIL',
     reqKarma: false,
@@ -3799,7 +3799,7 @@ export const sharedFetish: ShortTalent = {
     rankMod: false
 };
 
-export const sharedMatrix_Light: ShortTalent = {
+export const sharedMatrixLight: ShortTalent = {
     name: 'Shared Matrix - Light',
     attribute: '',
     reqKarma: false,
@@ -3808,7 +3808,7 @@ export const sharedMatrix_Light: ShortTalent = {
     rankMod: false
 };
 
-export const sharedMatrix_Elementalist: ShortTalent = {
+export const sharedMatrixElementalist: ShortTalent = {
     name: 'Shared Matrix-Elementalist',
     attribute: '',
     reqKarma: false,
@@ -3817,7 +3817,7 @@ export const sharedMatrix_Elementalist: ShortTalent = {
     rankMod: false
 };
 
-export const sharedMatrix_Illusionist: ShortTalent = {
+export const sharedMatrixIllusionist: ShortTalent = {
     name: 'Shared Matrix-Illusionist',
     attribute: '',
     reqKarma: false,
@@ -3826,7 +3826,7 @@ export const sharedMatrix_Illusionist: ShortTalent = {
     rankMod: false
 };
 
-export const sharedMatrix_Nethermancy: ShortTalent = {
+export const sharedMatrixNethermancy: ShortTalent = {
     name: 'Shared Matrix-Nethermancy',
     attribute: '',
     reqKarma: false,
@@ -3835,7 +3835,7 @@ export const sharedMatrix_Nethermancy: ShortTalent = {
     rankMod: false
 };
 
-export const sharedMatrix_Wizardry: ShortTalent = {
+export const sharedMatrixWizardry: ShortTalent = {
     name: 'Shared Matrix-Wizardry',
     attribute: '',
     reqKarma: false,
@@ -3997,7 +3997,7 @@ export const spellFetish: ShortTalent = {
     rankMod: false
 };
 
-export const spellMatrix_Light: ShortTalent = {
+export const spellMatrixLight: ShortTalent = {
     name: 'Spell Matrix - Light',
     attribute: '',
     reqKarma: false,
@@ -4006,7 +4006,7 @@ export const spellMatrix_Light: ShortTalent = {
     rankMod: false
 };
 
-export const spellMatrix_Elementalist: ShortTalent = {
+export const spellMatrixElementalist: ShortTalent = {
     name: 'Spell Matrix-Elementalist',
     attribute: '',
     reqKarma: false,
@@ -4015,7 +4015,7 @@ export const spellMatrix_Elementalist: ShortTalent = {
     rankMod: false
 };
 
-export const spellMatrix_Illusionist: ShortTalent = {
+export const spellMatrixIllusionist: ShortTalent = {
     name: 'Spell Matrix-Illusionist',
     attribute: '',
     reqKarma: false,
@@ -4024,7 +4024,7 @@ export const spellMatrix_Illusionist: ShortTalent = {
     rankMod: false
 };
 
-export const spellMatrix_Nethermancy: ShortTalent = {
+export const spellMatrixNethermancy: ShortTalent = {
     name: 'Spell Matrix-Nethermancy',
     attribute: '',
     reqKarma: false,
@@ -4033,7 +4033,7 @@ export const spellMatrix_Nethermancy: ShortTalent = {
     rankMod: false
 };
 
-export const spellMatrix_Wizardry: ShortTalent = {
+export const spellMatrixWizardry: ShortTalent = {
     name: 'Spell Matrix-Wizardry',
     attribute: '',
     reqKarma: false,

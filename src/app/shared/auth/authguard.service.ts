@@ -1,7 +1,7 @@
-import { Injectable } from "@angular/core";
-import { CanActivate, Router } from "@angular/router";
-import { AngularFireAuth } from "@angular/fire/auth";
-import { UserService } from "./user.service";
+import { Injectable } from '@angular/core';
+import { CanActivate, Router } from '@angular/router';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { UserService } from './user.service';
 
 @Injectable()
 export class AuthGuard implements CanActivate {
@@ -13,9 +13,9 @@ export class AuthGuard implements CanActivate {
 
   canActivate(): Promise<boolean> {
     return new Promise((resolve, reject) => {
-      this.userService.getCurrentUser().then(        
+      this.userService.getCurrentUser().then(
         user => {
-          this.router.navigate(["/charactersheet"]);
+          this.router.navigate(['/charactersheet']);
           return resolve(false);
         },
         err => {

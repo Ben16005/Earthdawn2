@@ -5,7 +5,7 @@ import { AuthService } from '../shared/auth/auth.service';
     templateUrl: './welcome.component.html'
 })
 export class WelcomeComponent {
-    public pageTitle: string = 'EarthDawn Web Application';
+    public pageTitle = 'EarthDawn Web Application';
 
     constructor(private googleAuthentication: AuthService) {}
 

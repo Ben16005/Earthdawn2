@@ -3,10 +3,10 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Talent } from '../../../models/talent';
 
 @Component({
-    selector: "modaldialog.component.html",
-    templateUrl: "modaldialog.component.html"
+    selector: 'app-modaldialog',
+    templateUrl: 'modaldialog.component.html'
   })
-  export class CharacterModalDialog {
+  export class CharacterModalDialogComponent {
     // Defined input needs a name and description field
     @Input() data: any;
 
