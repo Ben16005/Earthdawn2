@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Stat } from '../models/stat';
-import { EditModeService } from '../services/editmode.service';
+import { Stat } from '../core/models/stat';
+import { EditModeService } from '../core/services/editmode.service';
 
 @Component({
   templateUrl: './charactersheet.component.html',

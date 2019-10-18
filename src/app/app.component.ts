@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { CharacterService } from './services/character.service';
-import { Character } from './models/character';
-import { UserService } from './shared/auth/user.service';
-import { AuthService } from './shared/auth/auth.service';
+import { CharacterService } from './core/services/character.service';
+import { Character } from './core/models/character';
+import { UserService } from './core/auth/user.service';
+import { AuthService } from './core/auth/auth.service';
 import { User } from 'firebase';
 
 @Component({

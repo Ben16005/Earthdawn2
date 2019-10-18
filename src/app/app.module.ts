@@ -25,17 +25,17 @@ import { AsideLeftComponent } from './aside-left/asideleft.component';
 import { PrintSheetComponent } from './printsheet/printsheet.component';
 
 // Custom Services
-import { CharacterService } from './services/character.service';
-import { EditModeService } from './services/editmode.service';
+import { CharacterService } from './core/services/character.service';
+import { EditModeService } from './core/services/editmode.service';
 
 // Auth Modules
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { UserService } from './shared/auth/user.service';
-import { AuthGuard } from './shared/auth/authguard.service';
-import { UserResolver } from './shared/auth/userresolver.service';
-import { AuthService } from './shared/auth/auth.service';
+import { UserService } from './core/auth/user.service';
+import { AuthGuard } from './core/auth/authguard.service';
+import { UserResolver } from './core/auth/userresolver.service';
+import { AuthService } from './core/auth/auth.service';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Spells } from '../../models/spells';
+import { Spells } from '../../core/models/spells';
 import { CharacterModalDialogComponent } from 'src/app/shared/dialogs/modal/modaldialog.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
