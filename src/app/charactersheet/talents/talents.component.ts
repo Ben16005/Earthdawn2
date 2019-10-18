@@ -1,10 +1,8 @@
 import { Component, OnInit, Input, Inject } from '@angular/core';
-import { archer } from '../../shared/disciplines/archer';
-import { airSailor } from '../../shared/disciplines/airsailor';
-import { Discipline } from '../../models/discipline';
-import { Talent } from '../../models/talent';
-import { illusionist } from '../../shared/disciplines/illusionist';
-import { EditModeService } from '../../services/editmode.service';
+import * as Disciplines from '../../core/disciplines';
+import { Discipline } from '../../core/models/discipline';
+import { Talent } from '../../core/models/talent';
+import { EditModeService } from '../../core/services/editmode.service';
 import { CharacterModalDialogComponent } from '../../shared/dialogs/modal/modaldialog.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -16,7 +14,7 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class TalentsComponent implements OnInit {
   @Input() selectedCharacter;
 
-  disciplines: Discipline[] = [illusionist, archer, airSailor];
+  currentDisc: Discipline[] = [Disciplines.airSailor, Disciplines.archer, Disciplines.wizard];
 
   constructor(private editService: EditModeService, public dialog: NgbModal) {}
 

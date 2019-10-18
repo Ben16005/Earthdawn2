@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { EditModeService } from '../services/editmode.service';
+import { EditModeService } from '../core/services/editmode.service';
 
 @Component({
   selector: 'app-aside-left',

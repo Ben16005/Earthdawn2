@@ -5,8 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { WelcomeComponent } from './home/welcome.component';
 import { CharacterSheetComponent } from './charactersheet/charactersheet.component';
 import { PrintSheetComponent } from './printsheet/printsheet.component';
-import { AuthGuard } from './shared/auth/authguard.service';
-import { UserResolver } from './shared/auth/userresolver.service';
+import { AuthGuard } from './core/auth/authguard.service';
+import { UserResolver } from './core/auth/userresolver.service';
 
 const routes: Routes = [
   // { path: 'printsheet', component: PrintSheetComponent },

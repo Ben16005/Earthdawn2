@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { Talent } from '../../../models/talent';
+import { Talent } from '../../../core/models/talent';
 
 @Component({
     selector: 'app-modaldialog',
